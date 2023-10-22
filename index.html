@@ -21,9 +21,15 @@
             }
             .splashimg {
                 transition: filter 1s ease;
+                width: 45%;
             }
             .splashimg:hover {
                 filter: invert(100%);
+            }
+            @media screen and (max-width: 800px) {
+                .splashimg {
+                    width: 75%;
+                }
             }
          </style>
          <title>Josef Ball</title>
@@ -34,7 +40,7 @@
         <div class="splashintro">
             <div style="width:100%; text-align:center;">                    
                 <a href="mainmenu.html">
-                        <img class="splashimg" src="./resources/splashPage/whitetitle.png" style="width:60%;">      
+                        <img class="splashimg" src="./resources/splashPage/whitetitle.png">      
                 </a>
             </div>
         </div>
