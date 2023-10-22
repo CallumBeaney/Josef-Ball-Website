@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Josef Ball</title>
+
+    <style>
+    body {
+        background-image: url('./resources/mainmenu/menusplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-y: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul style="List-style: none;">
+            <h1>
+                <li data-bg="./resources/tiles/lc.jpg"><a href="https://www.phasesmag.com/clementine-blue-Josef-ball/lacuna-intertwine/">lacuna / intertwine</a></li>
+                <li data-bg="./resources/tiles/mp.jpg"><a href="./mp.html">monstrous pourings</a></li>
+                <li data-bg="./resources/tiles/zm.jpg"><a href="http://zermatt.josefball.com">zermatt</a></li>
+                <li data-bg="./resources/tiles/mb.jpg"><a href="./books.html">my books</a></li>
+                <li data-bg="./resources/tiles/abt.jpg"><a href="./about.html">about me</a></li>
+            </h1>
+        </ul>
+
+        <script>
+            /// To change your background images, change the relative links in the <li data-bg="(LINK)">
+            /// see: https://www.youtube.com/watch?v=hIWRDFCG7FY
+            const body = document.querySelector("body");
+            const li = document.querySelectorAll("li");
+        
+            li.forEach(el => {
+                /// This listens out for you hovering over a link (<a href....) wrapped in a list item (<li>)
+                el.addEventListener("mouseover", () => {
+                    let bg = el.getAttribute("data-bg");
+                    body.style.background = `url(${bg})no-repeat
+                        center /cover`;
+                });
+                /// This reverts the bg once you take your mouse off the link
+                el.addEventListener("mouseout", () => {
+                    let bg = `url('./resources/mainmenu/menusplash.jpg')`
+                    body.style.background = bg;
+                });
+            });
+        </script>
+
+    </div>
+</body>
+    

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    /*height:100%;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #161616; /*eigengrau 16161D*/
+    color: #AAAAAA;
+}
+        h2, .brgrey{
+            color: #DDDDDD;
+        }
+        a:link {
+          color: #AAAAAA;
+          text-decoration: none;
+        }
+        a:visited {
+          color: #AAAAAA;
+          text-decoration: none;
+        }
+        a:hover {
+            color: transparent;
+            text-decoration:none;
+        }
+          .container {
+            position: relative;
+            width: 50%;
+          }
+          .image {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: transparent;
+          }
+          
+          .container:hover .overlay {
+            opacity: 1;
+          }
+          .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .column iframe{
+    max-width: 100%;
+  }
+
+
+
+.box{
+    background-color: transparent;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    .box p{
+        text-justify: auto;
+        background-color: #DDDDDD;
+        color: #0e0e0e;
+        font-size: 1rem;
+        padding:3%;
+        max-width: 100%;
+    }
+       
+
+@media screen and (max-width: 800px) {
+    body {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,41 @@
+<!-- THIS IS YOUR SPASH SCREEN, IT _MUST_ BE NAMED "INDEX" IF YOU WANT TO HOST THIS AS A GITHUB PAGES HOST -->
+
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+     <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+         <link rel="stylesheet" href="style.css">
+         <style>
+             .splashintro{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+                background:url(./resources/splashPage/splash.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .splashimg {
+                transition: filter 1s ease;
+            }
+            .splashimg:hover {
+                filter: invert(100%);
+            }
+         </style>
+         <title>Josef Ball</title>
+
+     </head>
+
+     <body>
+        <div class="splashintro">
+            <div style="width:100%; text-align:center;">                    
+                <a href="mainmenu.html">
+                        <img class="splashimg" src="./resources/splashPage/whitetitle.png" style="width:60%;">      
+                </a>
+            </div>
+        </div>
+     </body>
